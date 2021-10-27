@@ -1,0 +1,14 @@
+@mixin button {
+  .btn {
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+
+  .btn:hover {
+    border: 1px solid $secondary-color;
+    color: #fff;
+    background-color: $secondary-color;
+  }
+}

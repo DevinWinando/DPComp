@@ -1,0 +1,90 @@
+body {
+  background-color: #131648;
+}
+
+.navbar {
+  background-color: #131648;
+  margin-top: 2rem;
+}
+
+.navbar a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c0c0c0;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar .btn {
+  border: 1px solid #f2994a;
+  color: #f2994a;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+
+.navbar .btn:hover {
+  border: 1px solid #f2994a;
+  color: #fff;
+  background-color: #f2994a;
+}
+
+#main {
+  margin: 4rem 0;
+}
+
+#main .left {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#main .left h1 {
+  color: #99efd0;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+}
+
+#main .left p {
+  color: #9384a3;
+  font-family: "varella", sans-serif;
+  font-weight: bold;
+}
+
+#main .left .row {
+  margin-top: 2rem;
+}
+
+#main .left .row .video {
+  width: 5rem;
+  height: 5rem;
+}
+
+#main .left .row p {
+  margin-left: -4.2rem;
+}
+
+#main .left .row a {
+  margin-left: -4.2rem;
+  color: #9384a3;
+  text-decoration: none;
+}
+
+#main .left .btn {
+  border: 1px solid #f2994a;
+  color: #f2994a;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+
+#main .left .btn:hover {
+  border: 1px solid #f2994a;
+  color: #fff;
+  background-color: #f2994a;
+}
+
+#main .right {
+  margin-left: -3.8rem;
+}
+/*# sourceMappingURL=main.css.map */

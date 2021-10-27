@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixin";
+
+body {
+  background-color: $primary-color;
+}
+
+.navbar {
+  background-color: $primary-color;
+  margin-top: 2rem;
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c0c0c0;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+
+  @include button;
+}
+
+#main {
+  margin: 4rem 0;
+
+  .left {
+    margin-right: 0;
+    padding-right: 0;
+    h1 {
+      color: $text-color;
+      font-family: "Inter", sans-serif;
+      font-weight: bolder;
+    }
+
+    p {
+      color: #9384a3;
+      font-family: "varella", sans-serif;
+      font-weight: bold;
+    }
+
+    .row {
+      margin-top: 2rem;
+      .video {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      p {
+        margin-left: -4.2rem;
+      }
+
+      a {
+        margin-left: -4.2rem;
+        color: #9384a3;
+        text-decoration: none;
+      }
+    }
+
+    @include button;
+  }
+
+  .right {
+    margin-left: -3.8rem;
+  }
+}
