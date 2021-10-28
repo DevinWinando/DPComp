@@ -20,7 +20,7 @@ body {
     color: #ffffff;
   }
 
-  @include button(7rem);
+  @include button(8rem);
 }
 
 #main {
@@ -55,7 +55,7 @@ body {
       }
     }
 
-    @include button(9rem);
+    @include button(10rem);
   }
 
   .right {
@@ -101,4 +101,31 @@ body {
       padding-left: 1.5rem;
     }
   }
+}
+
+#benefits {
+  height: 100vh;
+
+  .left {
+    h1 {
+      @include primary-font;
+    }
+
+    p {
+      @include secondary-font;
+    }
+
+    @include button(10rem);
+  }
+}
+
+#get-started {
+  height: 100vh;
+  background-image: url("../images/background-decoration-S5.svg");
+
+  h1 {
+    @include primary-font();
+  }
+
+  @include button(10rem);
 }

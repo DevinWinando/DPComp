@@ -21,7 +21,12 @@ body {
 .navbar .btn {
   border: 1px solid #f2994a;
   color: #f2994a;
-  width: 7rem;
+  width: 8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "rubik", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 0 0.6rem 0;
 }
 
 .navbar .btn:hover {
@@ -68,7 +73,12 @@ body {
 #main .left .btn {
   border: 1px solid #f2994a;
   color: #f2994a;
-  width: 9rem;
+  width: 10rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "rubik", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 0 0.6rem 0;
 }
 
 #main .left .btn:hover {
@@ -123,5 +133,64 @@ body {
 
 #features .features .pcustom {
   padding-left: 1.5rem;
+}
+
+#benefits {
+  height: 100vh;
+}
+
+#benefits .left h1 {
+  color: #99efd0;
+  font-family: "Inter", sans-serif;
+}
+
+#benefits .left p {
+  font-family: "varella", sans-serif;
+  color: #9384a3;
+  font-weight: bold;
+}
+
+#benefits .left .btn {
+  border: 1px solid #f2994a;
+  color: #f2994a;
+  width: 10rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "rubik", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 0 0.6rem 0;
+}
+
+#benefits .left .btn:hover {
+  border: 1px solid #f2994a;
+  color: #fff;
+  background-color: #f2994a;
+}
+
+#get-started {
+  height: 100vh;
+  background-image: url("../images/background-decoration-S5.svg");
+}
+
+#get-started h1 {
+  color: #99efd0;
+  font-family: "Inter", sans-serif;
+}
+
+#get-started .btn {
+  border: 1px solid #f2994a;
+  color: #f2994a;
+  width: 10rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "rubik", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 0 0.6rem 0;
+}
+
+#get-started .btn:hover {
+  border: 1px solid #f2994a;
+  color: #fff;
+  background-color: #f2994a;
 }
 /*# sourceMappingURL=main.css.map */
