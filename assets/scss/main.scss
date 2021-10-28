@@ -11,7 +11,7 @@ body {
 
   a {
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     text-transform: uppercase;
     color: #c0c0c0;
   }
@@ -20,49 +20,85 @@ body {
     color: #ffffff;
   }
 
-  @include button;
+  @include button(7rem);
 }
 
 #main {
   margin: 4rem 0;
 
   .left {
-    margin-right: 0;
-    padding-right: 0;
     h1 {
-      color: $text-color;
-      font-family: "Inter", sans-serif;
+      @include primary-font();
       font-weight: bolder;
     }
 
     p {
-      color: #9384a3;
-      font-family: "varella", sans-serif;
-      font-weight: bold;
+      @include secondary-font();
     }
 
     .row {
       margin-top: 2rem;
-      .video {
-        width: 5rem;
-        height: 5rem;
-      }
 
       p {
-        margin-left: -4.2rem;
+        margin-left: -1.5rem;
       }
 
       a {
-        margin-left: -4.2rem;
-        color: #9384a3;
+        margin-left: -1.5rem;
         text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        color: $secondary-font-color;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     }
 
-    @include button;
+    @include button(9rem);
   }
 
   .right {
     margin-left: -3.8rem;
+  }
+}
+
+#features {
+  height: 100vh;
+
+  .swiper {
+    .swiper-container {
+      transition: linear;
+    }
+
+    img {
+      filter: invert(56%) sepia(4%) saturate(1800%) hue-rotate(226deg) brightness(97%) contrast(84%);
+    }
+  }
+
+  .header {
+    margin-top: 5rem;
+
+    h1 {
+      @include primary-font();
+    }
+
+    p {
+      @include secondary-font();
+    }
+  }
+
+  .features {
+    h5 {
+      @include primary-font();
+    }
+
+    p {
+      @include secondary-font();
+    }
+
+    .pcustom {
+      padding-left: 1.5rem;
+    }
   }
 }

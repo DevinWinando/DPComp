@@ -9,7 +9,7 @@ body {
 
 .navbar a {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-transform: uppercase;
   color: #c0c0c0;
 }
@@ -21,8 +21,7 @@ body {
 .navbar .btn {
   border: 1px solid #f2994a;
   color: #f2994a;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  width: 7rem;
 }
 
 .navbar .btn:hover {
@@ -35,11 +34,6 @@ body {
   margin: 4rem 0;
 }
 
-#main .left {
-  margin-right: 0;
-  padding-right: 0;
-}
-
 #main .left h1 {
   color: #99efd0;
   font-family: "Inter", sans-serif;
@@ -47,8 +41,8 @@ body {
 }
 
 #main .left p {
-  color: #9384a3;
   font-family: "varella", sans-serif;
+  color: #9384a3;
   font-weight: bold;
 }
 
@@ -56,26 +50,25 @@ body {
   margin-top: 2rem;
 }
 
-#main .left .row .video {
-  width: 5rem;
-  height: 5rem;
-}
-
 #main .left .row p {
-  margin-left: -4.2rem;
+  margin-left: -1.5rem;
 }
 
 #main .left .row a {
-  margin-left: -4.2rem;
-  color: #9384a3;
+  margin-left: -1.5rem;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #9384a3;
+}
+
+#main .left .row a:hover {
+  text-decoration: underline;
 }
 
 #main .left .btn {
   border: 1px solid #f2994a;
   color: #f2994a;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  width: 9rem;
 }
 
 #main .left .btn:hover {
@@ -86,5 +79,49 @@ body {
 
 #main .right {
   margin-left: -3.8rem;
+}
+
+#features {
+  height: 100vh;
+}
+
+#features .swiper .swiper-container {
+  -webkit-transition: linear;
+  transition: linear;
+}
+
+#features .swiper img {
+  -webkit-filter: invert(56%) sepia(4%) saturate(1800%) hue-rotate(226deg) brightness(97%) contrast(84%);
+          filter: invert(56%) sepia(4%) saturate(1800%) hue-rotate(226deg) brightness(97%) contrast(84%);
+}
+
+#features .header {
+  margin-top: 5rem;
+}
+
+#features .header h1 {
+  color: #99efd0;
+  font-family: "Inter", sans-serif;
+}
+
+#features .header p {
+  font-family: "varella", sans-serif;
+  color: #9384a3;
+  font-weight: bold;
+}
+
+#features .features h5 {
+  color: #99efd0;
+  font-family: "Inter", sans-serif;
+}
+
+#features .features p {
+  font-family: "varella", sans-serif;
+  color: #9384a3;
+  font-weight: bold;
+}
+
+#features .features .pcustom {
+  padding-left: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

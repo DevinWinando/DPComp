@@ -1,9 +1,8 @@
-@mixin button {
+@mixin button($width) {
   .btn {
     border: 1px solid $secondary-color;
     color: $secondary-color;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
+    width: $width;
   }
 
   .btn:hover {
@@ -11,4 +10,15 @@
     color: #fff;
     background-color: $secondary-color;
   }
+}
+
+@mixin primary-font {
+  color: $primary-font-color;
+  font-family: $primary-font;
+}
+
+@mixin secondary-font {
+  font-family: $secondary-font;
+  color: $secondary-font-color;
+  font-weight: bold;
 }
