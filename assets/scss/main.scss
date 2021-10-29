@@ -162,6 +162,34 @@ body {
   background-position: center;
 
   .card {
-    background-color: #ffffff;
+    background: rgba(45, 52, 98, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(45, 52, 98, 0.2);
+    backdrop-filter: blur(10px);
+    height: 50vh;
+    text-align: center;
+
+    h1 {
+      @include primary-font();
+      color: $secondary-color;
+      margin: 2rem 0;
+    }
+
+    p {
+      @include secondary-font();
+    }
+
+    .input-group {
+      width: 25rem;
+
+      input {
+        background: rgba(45, 52, 98, 0.2);
+        border-radius: 10px;
+        border: 1px solid rgba(45, 52, 98, 0.6);
+        backdrop-filter: blur(10px);
+      }
+    }
+
+    @include button(8rem);
   }
 }
