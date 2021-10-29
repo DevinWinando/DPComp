@@ -26,13 +26,19 @@ body {
   font-weight: bold;
   font-family: "rubik", sans-serif;
   font-size: 0.9rem;
-  padding: 0.6rem 0 0.6rem 0;
+  padding: 0.7rem 0 0.7rem 0;
 }
 
 .navbar .btn:hover {
   border: 1px solid #f2994a;
-  color: #fff;
   background-color: #f2994a;
+  color: #fff;
+}
+
+.navbar .btn:active {
+  border: 1px solid #f2994a;
+  background-color: #f2994a;
+  color: #fff;
 }
 
 #main {
@@ -78,13 +84,19 @@ body {
   font-weight: bold;
   font-family: "rubik", sans-serif;
   font-size: 0.9rem;
-  padding: 0.6rem 0 0.6rem 0;
+  padding: 0.7rem 0 0.7rem 0;
 }
 
 #main .left .btn:hover {
   border: 1px solid #f2994a;
-  color: #fff;
   background-color: #f2994a;
+  color: #fff;
+}
+
+#main .left .btn:active {
+  border: 1px solid #f2994a;
+  background-color: #f2994a;
+  color: #fff;
 }
 
 #main .right {
@@ -123,12 +135,14 @@ body {
 #features .features h5 {
   color: #99efd0;
   font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
 }
 
 #features .features p {
   font-family: "varella", sans-serif;
   color: #9384a3;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 #features .features .pcustom {
@@ -158,18 +172,26 @@ body {
   font-weight: bold;
   font-family: "rubik", sans-serif;
   font-size: 0.9rem;
-  padding: 0.6rem 0 0.6rem 0;
+  padding: 0.7rem 0 0.7rem 0;
 }
 
 #benefits .left .btn:hover {
   border: 1px solid #f2994a;
-  color: #fff;
   background-color: #f2994a;
+  color: #fff;
+}
+
+#benefits .left .btn:active {
+  border: 1px solid #f2994a;
+  background-color: #f2994a;
+  color: #fff;
 }
 
 #get-started {
   height: 100vh;
-  background-image: url("../images/background-decoration-S5.svg");
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #get-started h1 {
@@ -185,12 +207,18 @@ body {
   font-weight: bold;
   font-family: "rubik", sans-serif;
   font-size: 0.9rem;
-  padding: 0.6rem 0 0.6rem 0;
+  padding: 0.7rem 0 0.7rem 0;
 }
 
 #get-started .btn:hover {
   border: 1px solid #f2994a;
-  color: #fff;
   background-color: #f2994a;
+  color: #fff;
+}
+
+#get-started .btn:active {
+  border: 1px solid #f2994a;
+  background-color: #f2994a;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

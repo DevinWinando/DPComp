@@ -91,10 +91,12 @@ body {
   .features {
     h5 {
       @include primary-font();
+      font-size: 1.1rem;
     }
 
     p {
       @include secondary-font();
+      font-size: 0.9rem;
     }
 
     .pcustom {
@@ -121,7 +123,9 @@ body {
 
 #get-started {
   height: 100vh;
-  background-image: url("../images/background-decoration-S5.svg");
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
   h1 {
     @include primary-font();
