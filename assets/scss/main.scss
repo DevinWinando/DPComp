@@ -133,3 +133,24 @@ body {
 
   @include button(10rem);
 }
+
+#learn-more {
+  height: 100vh;
+  .left {
+    h1 {
+      @include primary-font();
+    }
+
+    p {
+      @include secondary-font();
+    }
+
+    @include button(10rem);
+  }
+
+  .right {
+    background-image: url("../images/bg-S6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
