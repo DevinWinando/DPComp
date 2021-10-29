@@ -265,4 +265,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#contact {
+  height: 100vh;
+  background-image: url("../images/background-S8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contact .card {
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
