@@ -193,3 +193,33 @@ body {
     @include button(8rem);
   }
 }
+
+footer {
+  padding: 1rem 0 1rem 0;
+
+  // .gold {
+  //   color: $secondary-color;
+  // }
+
+  p {
+    @include secondary-font();
+  }
+
+  .link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #000;
+    background: rgba(45, 52, 98, 0.2);
+    border: 1px solid rgba(45, 52, 98, 0.6);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    margin-right: 1rem;
+
+    a {
+      color: #fff;
+    }
+  }
+}

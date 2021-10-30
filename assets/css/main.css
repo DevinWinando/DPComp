@@ -330,4 +330,39 @@ body {
   background-color: #f2994a;
   color: #fff;
 }
+
+footer {
+  padding: 1rem 0 1rem 0;
+}
+
+footer p {
+  font-family: "varella", sans-serif;
+  color: #9384a3;
+  font-weight: bold;
+}
+
+footer .link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #000;
+  background: rgba(45, 52, 98, 0.2);
+  border: 1px solid rgba(45, 52, 98, 0.6);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin-right: 1rem;
+}
+
+footer .link-wrapper a {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
