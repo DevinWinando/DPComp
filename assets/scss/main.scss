@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixin";
 
+* {
+  overflow-x: hidden;
+}
+
 body {
   background-color: $primary-color;
 }
@@ -39,12 +43,7 @@ body {
     .row {
       margin-top: 2rem;
 
-      p {
-        margin-left: -1.5rem;
-      }
-
       a {
-        margin-left: -1.5rem;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         color: $secondary-font-color;
@@ -64,7 +63,7 @@ body {
 }
 
 #features {
-  height: 100vh;
+  min-height: 100vh;
 
   .swiper {
     .swiper-container {
@@ -106,7 +105,7 @@ body {
 }
 
 #benefits {
-  height: 100vh;
+  min-height: 100vh;
 
   .left {
     h1 {
@@ -119,10 +118,16 @@ body {
 
     @include button(10rem);
   }
+
+  .right {
+    background-image: url("../images/bg-S6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 #get-started {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -134,39 +139,18 @@ body {
   @include button(10rem);
 }
 
-#learn-more {
-  height: 100vh;
-  .left {
-    h1 {
-      @include primary-font();
-    }
-
-    p {
-      @include secondary-font();
-    }
-
-    @include button(10rem);
-  }
-
-  .right {
-    background-image: url("../images/bg-S6.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 #contact {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/background-S8.png");
   background-repeat: no-repeat;
   background-position: center;
 
   .card {
-    background: rgba(45, 52, 98, 0.2);
+    background: rgba(45, 52, 98, 0.6);
     border-radius: 10px;
-    border: 1px solid rgba(45, 52, 98, 0.2);
+    border: 1px solid rgba(45, 52, 98, 0.6);
     backdrop-filter: blur(10px);
-    height: 50vh;
+    min-height: 50vh;
     text-align: center;
 
     h1 {
@@ -180,12 +164,12 @@ body {
     }
 
     .input-group {
-      width: 25rem;
+      width: 40%;
 
       input {
-        background: rgba(45, 52, 98, 0.2);
+        background: rgba(45, 52, 98, 0.6);
         border-radius: 10px;
-        border: 1px solid rgba(45, 52, 98, 0.6);
+        border: 1px solid rgba(45, 52, 98, 0.8);
         backdrop-filter: blur(10px);
       }
     }
@@ -196,10 +180,6 @@ body {
 
 footer {
   padding: 1rem 0 1rem 0;
-
-  // .gold {
-  //   color: $secondary-color;
-  // }
 
   p {
     @include secondary-font();
@@ -212,7 +192,7 @@ footer {
     height: 2.5rem;
     width: 2.5rem;
     background-color: #000;
-    background: rgba(45, 52, 98, 0.2);
+    background: rgba(70, 74, 102, 0.2);
     border: 1px solid rgba(45, 52, 98, 0.6);
     border-radius: 50%;
     backdrop-filter: blur(10px);
@@ -220,6 +200,64 @@ footer {
 
     a {
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  br {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #main {
+    .left {
+      .d-flex {
+        justify-content: center;
+      }
+
+      img {
+        width: 95%;
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+
+      .video {
+        img {
+          padding-bottom: 0.5rem;
+        }
+
+        a {
+          padding: 0.5rem 0 0 0.7rem;
+        }
+      }
+    }
+  }
+
+  #benefits {
+    background-image: url("../images/bg-S6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #get-started {
+    h1 {
+      padding-top: 7rem;
+    }
+  }
+
+  #contact {
+    .input-group {
+      display: block;
+
+      input {
+        width: 200% !important;
+      }
     }
   }
 }
