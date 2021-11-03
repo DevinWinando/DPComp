@@ -1,4 +1,4 @@
-* {
+body {
   overflow-x: hidden;
 }
 
@@ -329,9 +329,6 @@ footer .link-wrapper a {
 
 @media (max-width: 480px) {
   br {
-    display: none;
-  }
-  .navbar {
     display: none;
   }
   #main .left .d-flex {

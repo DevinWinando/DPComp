@@ -21,15 +21,3 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
-
-function init() {
-  const nama = "Devin";
-
-  function tampil() {
-    console.log(nama);
-  }
-
-  return tampil;
-}
-
-init();

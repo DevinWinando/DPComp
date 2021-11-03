@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixin";
 
-* {
+body {
   overflow-x: hidden;
 }
 
@@ -209,9 +209,9 @@ footer {
     display: none;
   }
 
-  .navbar {
-    display: none;
-  }
+  // .navbar {
+  //   display: none;
+  // }
 
   #main {
     .left {
