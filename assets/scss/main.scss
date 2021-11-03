@@ -25,6 +25,27 @@ body {
   }
 
   @include button(8rem);
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    height: 26px;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    top: 7%;
+    z-index: 3;
+
+    .burger {
+      display: block;
+      width: 60px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 1px;
+      transition: all 0.7s;
+    }
+  }
 }
 
 #main {
@@ -185,21 +206,21 @@ footer {
     @include secondary-font();
   }
 
-  .link-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color: #000;
-    background: rgba(70, 74, 102, 0.2);
-    border: 1px solid rgba(45, 52, 98, 0.6);
-    border-radius: 50%;
-    backdrop-filter: blur(10px);
-    margin-right: 1rem;
+  a {
+    color: #fff;
 
-    a {
-      color: #fff;
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.5rem;
+      width: 2.5rem;
+      background-color: #000;
+      background: rgba(70, 74, 102, 0.2);
+      border: 1px solid rgba(45, 52, 98, 0.6);
+      border-radius: 50%;
+      backdrop-filter: blur(10px);
+      margin-right: 1rem;
     }
   }
 }
@@ -209,12 +230,19 @@ footer {
     display: none;
   }
 
-  // .navbar {
-  //   display: none;
-  // }
+  .navbar {
+    @include button(9rem);
+  }
 
   #main {
+    margin: 0;
+
     .left {
+      h1,
+      p {
+        text-align: center;
+      }
+
       .d-flex {
         justify-content: center;
       }
@@ -239,10 +267,26 @@ footer {
     }
   }
 
+  #features {
+    margin-top: 3rem;
+  }
+
   #benefits {
     background-image: url("../images/bg-S6.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    .left {
+      text-align: center;
+    }
+
+    .right {
+      background-image: none;
+      img {
+        margin: 3rem 0 0 -0.7rem;
+        height: 45vh;
+      }
+    }
   }
 
   #get-started {
@@ -253,11 +297,17 @@ footer {
 
   #contact {
     .input-group {
-      display: block;
-
       input {
-        width: 200% !important;
+        width: 100vw !important;
       }
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    .row .justify-content-end {
+      justify-content: center !important;
     }
   }
 }
