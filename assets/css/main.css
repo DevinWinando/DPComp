@@ -11,10 +11,14 @@ body {
   margin-top: 2rem;
 }
 
+.navbar .navbar-brand {
+  font-weight: bold;
+}
+
 .navbar a {
   font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
   text-transform: uppercase;
+  font-weight: lighter;
   color: #c0c0c0;
 }
 

@@ -13,10 +13,14 @@ body {
   background-color: $primary-color;
   margin-top: 2rem;
 
+  .navbar-brand {
+    font-weight: bold;
+  }
+
   a {
     font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
     text-transform: uppercase;
+    font-weight: lighter;
     color: #c0c0c0;
   }
 
